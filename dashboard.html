@@ -5,8 +5,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="icon" type="image/png" href="sharingan.ico"/>
+  <link rel="icon" type="image/png" href="sharingan.ico" />
   <link rel="stylesheet" href="public/css/dashboard.css">
+  <!-- Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Jquery -->
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
 </head>
 <body>
   <!-- Navbar Start -->
@@ -21,34 +26,39 @@
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link" href="#">Readmore</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown link
+            Profile
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
+            <a class="dropdown-item" href="#">Username</a>
+            <a class="dropdown-item" href="#">member status</a>
+            <hr  />
+            <a class="dropdown-item" href="#">Logout</a>
           </div>
         </li>
       </ul>
     </div>
   </nav>
-<!-- Navbar End -->
-<!-- Main content start -->
-<span class = 'display-2 article-heading'><u>Your Articles</u></span>
-<hr class = 'article-heading-hr'/>
-
-<!-- Main content end -->
-<!-- Boootstrap js start  -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<!-- Boootstrap js   -->
+  <!-- Navbar End -->
+  <!-- Main content start -->
+  <div class="dashboard-your-article">
+    <span class='display-2 article-heading'><u>Your Articles</u></span>
+    <button type="button" class="btn btn-outline-success btn-circle btn-xl">+</button>
+  </div>
+  <!-- article cards start -->
+  <div class="articles " id="your-articles"></div>
+  <span class='display-2 like-article-heading'><u>Liked Articles</u></span>
+  <div class="articles" id="liked-articles"></div>
+  <!-- article cards end -->
+  <!-- Main content end -->
+  <!-- Boootstrap js start  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- Boootstrap js   -->
+  <script src="load-elements.js" charset="utf-8"></script>
 </body>
+
 </html>

@@ -3,6 +3,7 @@ const  bodyParser = require('body-parser');
 const app = express();
 var ejs  = require('ejs');
 var fs   = require('fs');
+var time;
 const PORT = 2000;
 
 app.use(bodyParser.urlencoded({
@@ -12,7 +13,7 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json()) ;
 
 app.get('/', (req, res) => {
-  res.sendFile(__dirname+'/tp.html')
+  res.sendFile(__dirname+'/editor.html')
 });
 app.post('/preview', (req, res) => {
   var template = fs.readFileSync('./template.ejs', 'utf-8');
