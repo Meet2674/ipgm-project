@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="icon" type="image/png" href="sharingan.ico" />
-  <link rel="stylesheet" href="public/css/dashboard.css">
+  <link rel="stylesheet" href="css/dashboard.css">
   <!-- Icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Jquery -->
@@ -35,8 +35,9 @@
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="#">Username</a>
             <a class="dropdown-item" href="#">member status</a>
+						<a class="dropdown-item" href="#">Subscribe</a>
             <hr  />
-            <a class="dropdown-item" href="#">Logout</a>
+            <a class="dropdown-item" href="/">Logout</a>
           </div>
         </li>
       </ul>
@@ -46,7 +47,7 @@
   <!-- Main content start -->
   <div class="dashboard-your-article">
     <span class='display-2 article-heading'><u>Your Articles</u></span>
-    <button type="button" class="btn btn-outline-success btn-circle btn-xl">+</button>
+    <a href="/new"><button type="button" class="btn btn-outline-success btn-circle btn-xl">+</button></a>
   </div>
   <!-- article cards start -->
   <div class="articles " id="your-articles"></div>

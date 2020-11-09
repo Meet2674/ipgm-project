@@ -1,32 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
 </head>
+
 <body>
   <form class="" action="/preview" method="post">
-    <textarea id="editor" name="editor" >
+    <textarea id="editor" name="editor">
       <p><a href="https://farm3.staticflickr.com/2896/33650426736_a9080913b9_k.jpg?momo_cache_bg_uuid=914a37a8-d06e-4f03-8a0b-b2b12001d30a&amp;quot"><img alt="image" src="https://farm3.staticflickr.com/2896/33650426736_a9080913b9_k.jpg?momo_cache_bg_uuid=914a37a8-d06e-4f03-8a0b-b2b12001d30a&amp;quot" style="height:1265px; width:2047px" /></a></p>
   </textarea>
-  <input type="submit">
+    <p>
+      <label for="title"> Title</label>
+      <input name="title" required="required" type="text" />
+    </p>
+    <p>
+      <label for="shortdesc"> Description</label>
+      <input name="shortdesc" required="required" type="text" />
+    </p>
+    <input type="radio" id="Technology" name="category" value=1>
+    <label for="Technology">Technology</label><br>
+    <input type="radio" id="Art" name="category" value=2>
+    <label for="Art">Art</label><br>
+    <input type="radio" id="Mystery" name="category" value=3>
+    <label for="Mystery">Mystery</label><br>
+    <input type="radio" id="Fiction" name="category" value=4>
+    <label for="Fiction">Fiction</label><br>
+    <input type="radio" id="SUSPENSE" name="category" value=5>
+    <label for="Suspense">Suspense</label><br>
+    <input type="submit">
   </form>
-<!-- <button type="button" name="button" onclick="down();"></button> -->
-<!-- <script src="ckeditor/ckeditor.js"></script> -->
-<script src="//cdn.ckeditor.com/4.15.0/full/ckeditor.js"></script>
-<script>
-    CKEDITOR.replace( 'editor' );
-    // function down(){
-    // var data = CKEDITOR.instances.editor.getData();;
-    // alert(data)
-    //   }
-//     var editor = CKEDITOR.replace( 'editor', { /*Editor instance configuration goes here*/ });
-// editor.on( 'instanceReady', function(event){
-//     if(event.editor.getCommand( 'maximize' ).state == CKEDITOR.TRISTATE_OFF);//ckeck if maximize is off
-//         event.editor.execCommand( 'maximize');
-// });
-</script>
+  <!-- <button type="button" name="button" onclick="down();"></button> -->
+  <!-- <script src="ckeditor/ckeditor.js"></script> -->
+  <script src="//cdn.ckeditor.com/4.15.0/full/ckeditor.js"></script>
+  <script>
+    CKEDITOR.replace('editor');
+  </script>
 </body>
+
 </html>
