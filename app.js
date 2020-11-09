@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
 app.post('/preview', (req, res) => {
   var template = fs.readFileSync('./template.ejs', 'utf-8');
   var html     = ejs.render ( template , {data:req.body.editor} );
-  fs.writeFileSync("./user1.html", html, 'utf8');
+  fs.writeFileSync("./articles/1/user1.html", html, 'utf8');
   res.send(req.body.editor);
 });
 app.listen(PORT, () => {

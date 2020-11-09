@@ -1,1 +1,0 @@
-# ipgm-project
